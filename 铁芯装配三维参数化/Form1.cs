@@ -34,8 +34,8 @@ namespace 铁芯装配三维参数化
                 string str = openFileDialog1.FileName;
                 MessageBox.Show(str);
                 ExcelUtility excelUtility = new ExcelUtility();
-                string strin = excelUtility.ReadFromExcelFile(str);
-                MessageBox.Show(strin);
+                excelUtility.LoadData(str);
+  
             }
         }
 
